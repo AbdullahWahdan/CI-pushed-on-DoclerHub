@@ -80,3 +80,6 @@ jobs:
           push: true
           tags: |
             ${{ vars.DOCKERHUB_USERNAME }}/app:latest
+
+      - name: Show Docker Hub Link
+        run: echo "Docker Hub Image: https://hub.docker.com/r/${{ vars.DOCKERHUB_USERNAME }}/app:latest"
