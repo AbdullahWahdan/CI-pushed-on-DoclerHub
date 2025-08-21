@@ -82,4 +82,7 @@ jobs:
             ${{ vars.DOCKERHUB_USERNAME }}/app:latest
 
       - name: Show Docker Hub Link
-        run: echo "Docker Hub Image: https://hub.docker.com/r/${{ vars.DOCKERHUB_USERNAME }}/app:latest"
+        run: |
+          echo "✅ Docker Hub Repository: https://hub.docker.com/r/${{ vars.DOCKERHUB_USERNAME }}/app"
+          echo "🟢 Latest Image Tag: ${{ vars.DOCKERHUB_USERNAME }}/app:latest"
+          echo "🟢 Commit Image Tag: ${{ vars.DOCKERHUB_USERNAME }}/app:${{ github.sha }}"
