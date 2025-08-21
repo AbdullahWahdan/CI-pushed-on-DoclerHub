@@ -37,6 +37,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: false
+          load: true
           tags: |
             ${{ vars.DOCKERHUB_USERNAME }}/app:latest
             ${{ vars.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
