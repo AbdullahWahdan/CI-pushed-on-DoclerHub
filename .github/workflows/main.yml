@@ -86,3 +86,5 @@ jobs:
           tags: |
             ${{ vars.DOCKERHUB_USERNAME }}/app:latest
             ${{ vars.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
+
+            
